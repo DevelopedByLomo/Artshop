@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  background: #ccc;
+  width: 100%;
+  height: auto;
+}
+header {
+  width: 100%;
+  background: rgb(10, 124, 80);
+  display: flex;
+  border-bottom: 2px solid rgb(148, 11, 29);
+  justify-content: space-between;
+  padding: 15px 10%;
+  align-items: center;
+  flex-wrap: wrap row;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+header h1 {
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: slategray;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(112, 128, 144);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.bton {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(148, 11, 29, 0.795);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.bton:hover {
+  background-color: rgb(148, 11, 29);
+}
+.btn:hover {
+  border: black 2px solid;
+  background-color: rgba(112, 128, 144, 0.315);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+    "section section section"
+    "section section section"
+    "section section section"
+    "aside aside aside"
+    "main main main"
+    "main main main"
+    "main main main";
+}
+section {
+  grid-area: section;
+  background: url(../pitcha/art1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10%;
+  font-size: 1rem;
+  color: #f4f4f4;
+  box-sizing: border-box;
+
+  text-shadow: 3px 3px 3px black;
+}
+section h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+aside {
+  grid-area: aside;
+  background: rgb(32, 30, 39);
+  display: flex;
+  box-sizing: border-box;
+
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 0px 10%;
+  font-size: 1rem;
+  color: #f4f4f4;
+  text-shadow: 3px 3px 3px black;
+}
+.float button {
+  border: none;
+  padding: 2px;
+  text-align: center;
+  background-color: rgba(112, 128, 144, 0.514);
+  transition: all 0.1s ease;
+  cursor: pointer;
+  background: rgb(10, 124, 80);
+}
+h3 {
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.float {
+  margin-left: auto;
+  margin-top: 5px;
+}
+main {
+  grid-area: main;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+}
+footer {
+  background: rgb(148, 11, 29);
+  width: 100vw;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.cardz {
+  margin: 10px;
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardz .btn {
+  padding: 10px;
+  font-size: 0.7rem;
+}
+.card1 {
+  margin: 10px;
+  box-sizing: border-box;
+  background: url(../pitcha/art1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card2 {
+  background: url(../pitcha/art2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card3 {
+  background: url(../pitcha/art3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card4 {
+  background: url(../pitcha/art4.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media screen and (max-width: 546px) {
+  header {
+    width: 100vw;
+    height: 100px;
+    background: rgb(10, 124, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(148, 11, 29);
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  header h1 {
+    cursor: pointer;
+  }
+
+  nav ul li a:hover {
+    color: slategray;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .btn {
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgba(112, 128, 144, 0.514);
+    transition: all 0.1s ease;
+    cursor: pointer;
+    font-size: 0.5rem;
+  }
+  .btn:hover {
+    background-color: slategray;
+  }
+  section h2 {
+    font-size: 2rem;
+    line-height: 1.7rem;
+  }
+  main {
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+  }
+
+  .float {
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .bton {
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    text-align: center;
+    background-color: rgba(201, 28, 80, 0.486);
+    transition: all 0.1s ease;
+    cursor: pointer;
+  }
+  .bton:hover {
+    background-color: rgba(11, 105, 148, 0.103);
+  }
+}

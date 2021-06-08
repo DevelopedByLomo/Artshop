@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+  background: #ccc;
+  width: 100%;
+  height: auto;
+}
+header {
+  width: 100%;
+  background: rgb(10, 124, 80);
+  display: flex;
+  border-bottom: 2px solid rgb(148, 11, 29);
+  justify-content: space-between;
+  padding: 15px 10%;
+  align-items: center;
+  flex-wrap: wrap row;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+header h1 {
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: slategray;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(112, 128, 144);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.bton {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(112, 128, 144);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.bton:hover {
+  background-color: rgba(112, 128, 144, 0.315);
+}
+.btn:hover {
+  border: black 2px solid;
+  background-color: rgba(112, 128, 144, 0.315);
+}
+aside {
+  grid-area: aside;
+  background: rgb(32, 30, 39);
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 20px 10%;
+  font-size: 1rem;
+  color: #f4f4f4;
+  text-shadow: 3px 3px 3px black;
+}
+.float button {
+  border: none;
+  padding: 2px;
+  text-align: center;
+  background-color: rgba(112, 128, 144, 0.514);
+  transition: all 0.1s ease;
+  cursor: pointer;
+  background: rgb(10, 124, 80);
+}
+h3 {
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.float {
+  margin-left: auto;
+  margin-top: 5px;
+}
+footer {
+  background: rgb(148, 11, 29);
+  width: 100vw;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+main {
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 1rem;
+  margin-bottom: 75px;
+}
+.win {
+  margin-top: 10px;
+}
+.yeah {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box2 {
+  background-color: rgb(10, 124, 80);
+  height: fit-content;
+  border-radius: 8px;
+  padding: 1%;
+  color: #f4f4f4;
+}
+.box2 h2 {
+  margin-bottom: 5px;
+  color: black;
+}
+@media screen and (max-width: 546px) {
+  header {
+    width: 100vw;
+    height: 100px;
+    background: rgb(10, 124, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(148, 11, 29);
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  header h1 {
+    cursor: pointer;
+  }
+
+  nav ul li a:hover {
+    color: slategray;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .btn {
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgba(112, 128, 144, 0.514);
+    transition: all 0.1s ease;
+    cursor: pointer;
+    font-size: 0.5rem;
+  }
+  .btn:hover {
+    background-color: slategray;
+  }
+  section h2 {
+    font-size: 2rem;
+    line-height: 1.7rem;
+  }
+
+  .float {
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  main {
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 1rem;
+    margin-bottom: 75px;
+  }
+}

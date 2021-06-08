@@ -120,9 +120,10 @@ main {
   background-color: rgb(10, 124, 80);
   height: fit-content;
   border-radius: 8px;
-  padding: 1%;
+  padding: 15px;
   color: #f4f4f4;
 }
+.box1{padding:15px;}
 .box2 h2 {
   margin-bottom: 5px;
   color: black;

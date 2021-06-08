@@ -76,7 +76,7 @@ nav ul li {
 }
 section {
   grid-area: section;
-  background: url(../pitcha/art1.jpg) no-repeat;
+  background: url(./images/art1.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -159,22 +159,22 @@ footer {
 .card1 {
   margin: 10px;
   box-sizing: border-box;
-  background: url(../pitcha/art1.jpg);
+  background: url(./images/art1.jpg);
   background-size: cover;
   background-position: center;
 }
 .card2 {
-  background: url(../pitcha/art2.jpg);
+  background: url(./images/art2.jpg);
   background-size: cover;
   background-position: center;
 }
 .card3 {
-  background: url(../pitcha/art3.jpg);
+  background: url(./images/art3.jpg);
   background-size: cover;
   background-position: center;
 }
 .card4 {
-  background: url(../pitcha/art4.jpg);
+  background: url(./images/art4.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
